@@ -1,15 +1,11 @@
 import React from "react";
 
-export function SkillItem({icon, percentage}) {
-    return(
-        <ol className="flex flex-row md:flex-row relative border-l border-stone-200">
-            <li className="mb-10 ml-4">
-                <div className="absolute w-3 h-3 bg-stone-200 rounded-full mt-1.5 -left-1.5 border-white"/>
-                <p className="flex flex-wrap gap-4 flex-row items-center justify-start text-cs md:text-sm">
-                    <span className="inline-block px-2 py-1 font-semibold text-white bg-[#001b5e] rounded-md">{icon}</span>
-                    <span className="text-lg font-semibold text-[#001b5e]">{percentage}</span>
-                </p>
-            </li>
-        </ol>
+export function SkillItem({icon}) {
+
+    return (
+        <div className="bg-gray-300 p-4 m-2 flex flex-col items-center rounded-lg w-auto">
+            <span className="inline-block p-4 mb-2 rounded-md"><img className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-20 lg:h-20  font-semibold rounded-md" src={icon} alt="" /></span>
+            {/* <span className="text-2xl font-semibold text-[#001b5e]">{percentage}</span> */}
+        </div>
     )
 };
