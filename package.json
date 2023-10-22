@@ -1,7 +1,7 @@
 {
   "name": "portafolio-react",
-  "private": true,
-  "homepage": "https://invanz.github.io/portfolio-react",
+  "private": false,
+  "homepage": "https://invanz.github.io/portfolio-react/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
