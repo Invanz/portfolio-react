@@ -2,8 +2,6 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import {FaGithub, FaWhatsapp, FaLinkedinIn} from "react-icons/fa";
 
-// https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616_1280.jpg
-
 export function Main() {
     return(
         <div id="main">
