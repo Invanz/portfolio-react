@@ -31,7 +31,7 @@ export function SideNav(){
                     <AiOutlineReconciliation size={20} />
                     <span className="pl-4">Projects</span>
                 </a>
-                <a onClick={handleNav} href="#main" className={smallStyles}>
+                <a onClick={handleNav} href="cv.pdf" target="_blank" className={smallStyles}>
                     <BsPerson size={20} />
                     <span className="pl-4">Resume</span>
                 </a>
