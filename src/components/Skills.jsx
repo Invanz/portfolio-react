@@ -33,8 +33,8 @@ const responsive = {
 
 export function Skills() {
     return(
-        <div id="skills" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16">
-            <h1 className="text-4xl font-bold text-center text-[#001b5e]">Skills</h1>
+        <div id="skills" className="max-w-[1600px] m-auto md:pl-20 p-4 py-16">
+            <h1 className="text-4xl font-bold text-center text-[#001b5e]">Skills</h1><br />
             <div className="bg-gray-200 rounded-lg p-4 flex">
             <Carousel 
             responsive={responsive} 
