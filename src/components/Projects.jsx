@@ -2,19 +2,33 @@ import React from "react";
 import { ProjectItem } from "./ProjectItem";
 import calculator from "../assets/calculator.png";
 import weather from "../assets/weather.png";
+import taskList from "../assets/task-list.png";
+import chess from "../assets/chess.png"
 
 const projects = [
     {
         image: calculator,
-        title: "Calculator",
-        technologies: "React.js",
+        title: "Calculator App",
+        technologies: "JavaScript, HTML5, CSS3, React.js",
         link: "https://invanz.github.io/calculator/"
     },
     {
         image: weather,
         title: "Weather App",
-        technologies: "React.js",
+        technologies: "JavaScript, HTML5, CSS3, React.js",
         link: "https://invanz.github.io/weather/"
+    },
+    {
+        image: taskList,
+        title: "TaskFlow App",
+        technologies: "React.js, ChakraUi",
+        link: "https://invanz.github.io/my-react-task-list/"
+    },
+    {
+        image: chess,
+        title: "Chess App",
+        technologies: "JavaScript, HTML5, CSS3",
+        link: "https://invanz.github.io/chess-game/"
     },
 ]
 
