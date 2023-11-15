@@ -1,19 +1,17 @@
-import { SideNav } from './components/SideNav';
-import { Main } from './components/Main';
-import { Skills } from './components/Skills';
-import { Projects } from './components/Projects';
-import { Contact } from './components/Contact';
+import React from "react";
+import {MinimalistPortfolio} from "./pages/minimalist/MinimalistPortfolio";
+import { DefaultPortfolio } from "./pages/default/DefaultPortfolio";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
 
   return (
-    <div>
-    <SideNav/>
-    <Main />
-    <Skills />
-    <Projects />
-    <Contact />
-    </div>
+    <Router basename="portfolio-react">
+      <Routes>
+        <Route path="/" element={< MinimalistPortfolio />} />
+        <Route path="/old" element={< DefaultPortfolio />} />
+      </Routes>
+    </Router>
   )
 }
 

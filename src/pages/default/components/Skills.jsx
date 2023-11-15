@@ -1,32 +1,33 @@
 import React from "react";
 import Carousel from 'react-multi-carousel';
-import javascript from "../assets/javascript.svg";
-import mongodb from "../assets/mongodb.svg";
-import node from "../assets/node.svg";
-import reactTwo from "../assets/react-two.svg";
+import javascript from "../../../assets/javascript.svg";
+import mongodb from "../../../assets/mongodb.svg";
+import node from "../../../assets/node.svg";
+import reactTwo from "../../../assets/react-two.svg";
+import express from "../../../assets/express.svg";
 import 'react-multi-carousel/lib/styles.css';
 import { SkillItem } from "./SkillItem";
 
-const icons = [javascript, node, reactTwo, mongodb];
+const icons = [javascript, node, reactTwo, mongodb, express];
 
 
 const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 5
+      items: 4
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3
+      items: 4
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2
+      items: 3
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1
+      items: 2
     }
   };
 

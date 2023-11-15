@@ -1,7 +1,8 @@
+
 export function Contact(){
     return (
         <div id="contact" className="max-w-[1600px] m-auto md:pl-20 p-4 py-16">
-            <h1 className="py-4 text-4xl font-bold text-center text-[#001b5e]">Contact</h1>
+            <h1 className="py-4 text-4xl font-bold text-center text-[#001b5e]">Contact</h1>          
             <form action="https://getform.io/f/710aa063-cde2-4b88-a992-9f6f5543805e" method="POST" encType="multipart/form-data">
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                     <div className="flex flex-col">

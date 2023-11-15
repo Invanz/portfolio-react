@@ -1,9 +1,9 @@
 import React from "react";
 import { ProjectItem } from "./ProjectItem";
-import calculator from "../assets/calculator.png";
-import weather from "../assets/weather.png";
-import taskList from "../assets/task-list.png";
-import chess from "../assets/chess.png"
+import calculator from "../../../assets/calculator.png";
+import weather from "../../../assets/weather.png";
+import taskList from "../../../assets/task-list.png";
+import chess from "../../../assets/chess.png";
 
 const projects = [
     {
@@ -30,7 +30,7 @@ const projects = [
         technologies: "JavaScript, HTML5, CSS3",
         link: "https://invanz.github.io/chess-game/"
     },
-]
+];
 
 export function Projects(){
     return(

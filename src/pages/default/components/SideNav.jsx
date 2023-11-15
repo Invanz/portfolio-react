@@ -1,17 +1,24 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {AiOutlineMenu, AiOutlineHome, AiOutlineReconciliation, AiOutlineMail, AiOutlineTool} from "react-icons/ai";
 import {BsPerson} from "react-icons/bs"
 
 export function SideNav(){
 
+    const [scrollY, setScrollY] = useState("gray-800");
     const [nav, setNav] = useState(false);
     const handleNav = () => {
         setNav(!nav);
     };
 
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            window.scrollY > 600 ? setScrollY("[#001b5e]") : setScrollY("gray-800");
+        })
+    });
+
     const smallStyles = "w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200";
 
-    const mediumStyles = "rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursos-pointer hover:scale-110 ease-in duration-300"
+    const mediumStyles = `rounded-full shadow-lg bg-${scrollY} shadow-gray-400 m-2 p-4 cursos-pointer hover:scale-110 ease-in duration-300`
 
     return (
         <div>
@@ -48,19 +55,19 @@ export function SideNav(){
         <div className="md:block hidden fixed top-[25%] z-10">
             <div className="flex flex-col">
                 <a href="#main" className={mediumStyles}>
-                    <AiOutlineHome size={20}/>
+                    <AiOutlineHome size={20} color="white"/>
                 </a>
                 <a href="#skills" className={mediumStyles}>
-                    <AiOutlineTool size={20}/>
+                    <AiOutlineTool size={20} color="white"/>
                 </a>
                 <a href="#projects" className={mediumStyles}>
-                    <AiOutlineReconciliation size={20}/>
+                    <AiOutlineReconciliation size={20} color="white"/>
                 </a>
                 <a href="cv.pdf" className={mediumStyles} target="_blank">
-                    <BsPerson size={20}/>
+                    <BsPerson size={20} color="white"/>
                 </a>
                 <a href="#contact" className={mediumStyles}>
-                    <AiOutlineMail size={20}/>
+                    <AiOutlineMail size={20} color="white"/>
                 </a>
             </div>
         </div>

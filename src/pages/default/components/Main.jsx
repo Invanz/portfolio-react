@@ -4,8 +4,8 @@ import {FaGithub, FaWhatsapp, FaLinkedinIn} from "react-icons/fa";
 
 export function Main() {
     return(
-        <div id="main">
-            <img className="w-full h-screen object-cover" src="light-background.webp" alt="/" />
+        <div id="main" className="relative overflow-hidden">
+            <img className="w-full h-screen object-cover" src="light-background.webp" alt="/"/>
             <div className="w-full h-screen absolute top-0 left-0 bg-white/50">
                 <div className="max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center">
                     <h1 className="sm:text-5xl lg:text-6xl text-4xl font-bold text-gray-800">Arturo Guerra</h1>
@@ -38,7 +38,8 @@ export function Main() {
                             <FaWhatsapp className="cursor-pointer" size={20}/>
                         </a>
                     </div>
-                </div> 
+                </div>
+                
             </div>
         </div>
     );
