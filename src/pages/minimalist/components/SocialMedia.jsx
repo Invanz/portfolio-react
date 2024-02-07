@@ -24,7 +24,7 @@ export function SocialMedia() {
             </a>
         </li>
         <li className="mr-5 text-xs">
-            <a className="block hover:text-slate-200" href="cv.pdf" target="_blank" title="Resume">
+            <a className="block hover:text-slate-200" href="https://drive.google.com/file/d/1HVwmuvjL_uK1I6MlwbHk8vXx9aHjTTcl/view?usp=sharing" target="_blank" title="Resume">
                 <span className="sr-only">Resume</span>
                 <FaUser className="cursor-pointer" size={20}/>
             </a>
